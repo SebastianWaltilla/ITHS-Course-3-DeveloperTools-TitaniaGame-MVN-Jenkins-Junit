@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="Background" maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.TitaniaController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@Background.jpg" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="TextBox" layoutX="14.0" layoutY="63.0" opacity="0.6" prefHeight="325.0" prefWidth="346.0" style="-fx-background-color: white;" />
+      <TextField fx:id="IP" layoutX="373.0" layoutY="62.0" opacity="0.6" prefHeight="25.0" prefWidth="138.0" promptText="Enter IP and Port here" style="-fx-background-color: white;" />
+      <TextArea fx:id="playerStats" layoutX="373.0" layoutY="97.0" opacity="0.6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" />
+      <TextField fx:id="ActionInput" layoutX="373.0" layoutY="308.0" opacity="0.6" prefHeight="47.0" prefWidth="200.0" promptText="Enter playerinput here" style="-fx-background-color: white;" />
+      <Button fx:id="Button1" layoutX="373.0" layoutY="363.0" mnemonicParsing="false" onAction="#SendPlayerInputToGame" opacity="0.7" prefHeight="25.0" prefWidth="200.0" text="Enter input" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Button  fx:id="Button2" onAction="#SendIPInputToGame" layoutX="521.0" layoutY="62.0" mnemonicParsing="false" opacity="0.7" text="send IP" />
+   </children>
+</Pane>
